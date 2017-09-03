@@ -1,0 +1,15 @@
+@mixin link-background-hover($color){
+&:hover{
+color:$color;
+@include link-background-transition(color,100ms,ease-in)
+
+}
+}
+
+
+@mixin link-background-transition($property,$time,$effect){
+
+transition:$property $time $effect;
+
+
+}

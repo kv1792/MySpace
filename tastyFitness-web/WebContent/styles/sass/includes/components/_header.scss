@@ -1,0 +1,50 @@
+ /* -------- header starts --------- */
+    
+    .headerMain{
+    min-height: 50px;
+    position: relative;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid $secondryColor;
+    background-color: $primaryColor;
+    color: white;
+    padding:10px;
+    z-index:2;
+    opacity:0.8
+    }
+    
+    .appName {
+    float: left;
+    font-size: 2em;
+    font-family: $fontFamily;
+    font-weight: normal;
+}
+
+	.userLoginButtons {
+    float: right;
+    clear: both;
+}
+	.loginOptions {
+    margin-right: 25px;
+    font-family:$fontFamily;
+	border-right: 1px solid $secondryColor;
+    padding-right: 25px;
+    display:inline-block;
+    list-style-type:none;
+    float:left;
+    cursor:pointer;
+    
+    @include link-background-hover($secondryColor);
+    @include link-background-transition(color,100ms,ease-in)
+    
+    }
+    
+    
+    
+    
+	.loginOptions:last-child {
+    border-right : none;
+}
+
+    
+ /* ----------- header ends ---------  */   

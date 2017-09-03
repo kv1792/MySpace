@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<script src="scripts/angular.js"></script>
+<script src="https://cdn.jsdelivr.net/angular.ui-router/1.0.1/angular-ui-router.min.js"></script>
+<script src="scripts/welcome.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="styles/css/welcome.css">
+
+</head>
+
+
+<body ng-app="tastyFitnessWelcomeModule">
+
+<header ng-controller="headerController" class="headerMain">
+<div class="appName">{{appName}}</div>
+<div class="userLoginButtons">
+<ul>
+<li class="loginOptions" ng-repeat="loginOptions in loginOptions" ng-click="stateRedirector(loginOptions)">{{loginOptions}}</li>
+</ul>
+</div>
+</header>
+
+<section ui-view="templatingSection" class="templateSection"></section>
+
+
+<footer ng-controller="footerController" class="footerMain">
+<div class="communicationDetails"><span class="commOptions">{{contactUs}}</span><span ng-repeat="media in mediaOptions"><a href = "{{media.url}}" class="{{media.classN}}"></a></span></div>
+<div class="copyrightStatement">&#x24B8; Kaustubh Vadher 2017</div>
+</footer>
+</body>
+</html>

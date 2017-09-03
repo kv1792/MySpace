@@ -1,0 +1,106 @@
+/* -------- header starts --------- */
+.headerMain {
+  min-height: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid aqua;
+  background-color: #000249;
+  color: white;
+  padding: 10px;
+  z-index: 2;
+  opacity: 0.8; }
+
+.appName {
+  float: left;
+  font-size: 2em;
+  font-family: sans-serif;
+  font-weight: normal; }
+
+.userLoginButtons {
+  float: right;
+  clear: both; }
+
+.loginOptions {
+  margin-right: 25px;
+  font-family: sans-serif;
+  border-right: 1px solid aqua;
+  padding-right: 25px;
+  display: inline-block;
+  list-style-type: none;
+  float: left;
+  cursor: pointer;
+  transition: color 100ms ease-in; }
+  .loginOptions:hover {
+    color: aqua;
+    transition: color 100ms ease-in; }
+
+.loginOptions:last-child {
+  border-right: none; }
+
+/* ----------- header ends ---------  */
+body {
+  background: url("../../resources/images/bg-2.jpg") no-repeat fixed center;
+  background-attachment: fixed; }
+
+.templateSection {
+  float: left;
+  width: 100%;
+  min-height: 433px;
+  padding: 0px 8px;
+  position: relative; }
+
+.fa {
+  padding: 10px;
+  font-size: 0.7em;
+  margin: 5px; }
+
+footer.footerMain {
+  min-height: 30px;
+  float: left;
+  position: absolute;
+  bottom: 0;
+  background-color: #000249;
+  width: 98.4%;
+  border-top: 1px solid aqua;
+  padding: 3px 10px;
+  opacity: 0.8; }
+
+.communicationDetails {
+  float: left; }
+
+.copyrightStatement {
+  display: inline-block;
+  color: white;
+  float: right;
+  font-family: sans-serif;
+  font-size: 0.6em;
+  padding: 10px 20px 3px 3px; }
+
+.fa-facebook, .fa-google, .fa-twitter {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  display: inline-block; }
+  .fa-facebook:hover, .fa-google:hover, .fa-twitter:hover {
+    color: aqua;
+    transition: color 100ms ease-in; }
+
+.commOptions {
+  color: white;
+  font-size: 0.8em;
+  font-family: sans-serif;
+  cursor: pointer; }
+  .commOptions:hover {
+    color: aqua;
+    transition: color 100ms ease-in; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 99.2%;
+  font-size: 16px;
+  z-index: 1; }
+
+/*# sourceMappingURL=welcome.css.map */

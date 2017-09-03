@@ -1,0 +1,16 @@
+    @import 'includes/global/variables';
+    @import 'includes/global/mixins';
+    @import 'includes/components/header';
+    @import 'includes/components/body';
+    @import 'includes/components/footer';
+    
+    
+    
+    body,html{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:99.2%;
+    font-size:16px;
+    z-index:1;
+    }

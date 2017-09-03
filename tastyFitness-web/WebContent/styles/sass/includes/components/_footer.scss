@@ -1,0 +1,47 @@
+.fa{
+  padding: 10px;
+  font-size: 0.7em;
+  margin: 5px;
+}
+
+footer.footerMain {
+    min-height: 30px;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    background-color: $primaryColor;
+    width: 98.4%;
+    border-top:1px solid $secondryColor;
+    padding:3px 10px;
+    opacity:0.8
+
+}
+.communicationDetails{
+float:left;
+}
+.copyrightStatement {
+    display: inline-block;
+    color: white;
+    float: right;
+    font-family: sans-serif;
+    font-size: 0.6em;
+    padding: 10px 20px 3px 3px;
+}
+
+.fa-facebook,.fa-google,.fa-twitter{
+background-color:transparent;
+color:white;
+text-decoration:none;
+display:inline-block;
+
+@include link-background-hover($secondryColor)
+
+}
+
+.commOptions{
+color:white;
+font-size:0.8em;
+font-family: $fontFamily;
+cursor:pointer;
+@include link-background-hover($secondryColor)
+}

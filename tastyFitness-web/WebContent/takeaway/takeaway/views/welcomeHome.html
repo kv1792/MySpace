@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sample Application</title>
+  <link rel="stylesheet" type="text/css" href="styles/sampleApplication.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script> 
+<script src="https://cdn.jsdelivr.net/angular.ui-router/1.0.1/angular-ui-router.min.js"></script>
+<script src="scripts/sampleApplication.js"></script>
+</head>
+<body ng-app="sampleApplication" ng-controller="mainController">
+
+<header id="application-header" ng-controller="headerController">
+
+<div id="application-title"><h4>Sample Application</h4></div>
+<div id="application-userLoginOptions"><span id="application-signUp" ng-click="signUpUser()">{{SignUp}}</span><span id="application-signIn" ng-click="loginUser()" ng-hide="showLogin">{{Login}}</span><span id="application-signOut" ng-click="logOutUser()" ng-if="showLogin">{{Logout}}</span></div>
+
+
+</header>
+<div id="homeBody" ui-view="userLoginOptionView"></div>
+
+
+<div ui-view="optionSection" class="optionSection">
+</div>
+
+<div ui-view="templateSection" class="templateSection">
+</div>
+
+
+
+<footer id="application-footer">
+
+<small>Copyrights reserved</small>
+
+</footer>
+
+
+
+</body>
+</html>
