@@ -1,0 +1,19 @@
+{
+  "name": "expressgenres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaustubh Vadher",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "joi": "^13.4.0",
+    "nodemon": "^1.18.2"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.5"
+  }
+}
